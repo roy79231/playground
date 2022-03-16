@@ -1,9 +1,9 @@
 import random
-y=int(input('一天聊幾句?'))
 while True :
+    y=int(input('一天聊幾句?'))
     if y == 0:
         print('她媽連聊都不會聊告三小白')
-        print('請認真作答喔:)')
+        break
     elif y == 1:
         print('偏少欸，你確定真的要?')
         break
@@ -13,10 +13,11 @@ while True :
     else :
         print('有點機會喔!')
         break
-z=int(input('多久聊一次(天):'))
 while True :    
+    z=int(input('多久聊一次(天):'))
     if z == 0 :
-    	print('講啥洨話喔，他媽認真填拉')
+    	print('沒聊過也想衝，偏狠欸')
+    	break
     if z == 1 :
     	print('這邊信我，一定中的拉')
     	break
@@ -32,7 +33,7 @@ r=input('關係如何?')
 if r == '曖昧':
 	print('她媽曖昧都不衝，你是要等他給別人喔?')
 if r == '陌生人':
-    print('這邊一定衝，中了拿男朋友，沒中別人會說當朋友，期望至>0')
+    print('這邊一定衝，中了拿男/女朋友，沒中別人會說當朋友，期望值>0')
 if r == '朋友':
     print('衝拉，賭一把，反正失敗還是能繼續當朋友一起玩')
 
@@ -45,9 +46,9 @@ if y == 1 and z >= 2 and r == '陌生人':
 if y >= 10 and z == 1 and r == '曖昧' :
     print('告白成功的機率為100%')
     print('這都不衝的話,你懶蛋八成被閹割了')
-if x >= 75 : 
+if x >= 50 : 
     print('告白成功的機率為',x,'%')
-    print('這機率都有75%，你就沒道理失敗喔')
+    print('這機率都有50%了，你就沒道理失敗喔')
 else :
     print('告白成功的機率為',x,'%')
     print('其實太低也沒關係，數據僅供參考')       
@@ -58,3 +59,6 @@ while True :
 		    j= j+1
 		    if j>=10 :
 			    break
+
+
+
